@@ -21,7 +21,7 @@ body {
   top: 34px;
   left: 560px;
   width: 663px;
-  height: 200px;
+  height: 130px;
   background-color: #FFD119;
 }
 
@@ -36,11 +36,10 @@ h1 {
 
 h2 {
   position: absolute;
-  top: 150px;
-  right: 65px;
   font-family: 'Raleway', sans-serif;
-  color: black;
-  font-size: 24px;
+  color: blue;
+  font-size: 14px;
+  bottom: 0;
 }
 
 /* Gallery Stying */
@@ -88,7 +87,7 @@ h2 {
   left: 560px;
   height: 100px;
   padding-top: 10px;
-  padding-bottom: 14px;
+  padding-bottom: 24px;
   background-color: #33CCFF;
 }
 
