@@ -1,1 +1,130 @@
-/* Stylesheet */
+html,
+body {
+	background-color: #669999;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* colors: lightblue - #33CCFF
+		   grayblue -- #669999
+		   gold ------ #FFD119
+		   white ----- #FFFFFF
+*/
+
+.header {
+  position: absolute;
+  top: 34px;
+  left: 560px;
+  width: 663px;
+  height: 200px;
+  background-color: #FFD119;
+}
+
+h1 {
+  position: absolute;
+  top: -35px;
+  right: 30px;
+  font-family: 'Paytone One', sans-serif;
+  color: white;
+  font-size: 60px;
+}
+
+h2 {
+  position: absolute;
+  top: 150px;
+  right: 65px;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 24px;
+}
+
+/* Gallery Stying */
+.gallery .control-button {
+  color: #ccc;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.gallery .control-button:hover {
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/*
+	Theme controls how everything looks in Gallery CSS.
+*/
+
+@keyframes carousel{
+    0%	  {margin-left: 0; }
+    100%  {margin-left: -820px;}
+}
+@-webkit-keyframes carousel{
+    0%	  {margin-left: 0; }
+    100%  {margin-left: -820px;}
+}
+@-moz-keyframes carousel{
+    0%	  {margin-left: 0; }
+    100%  {margin-left: -820px;}
+}
+
+.gallery {
+  position: absolute;
+}
+
+.gallery .item {
+  overflow: hidden;
+  text-align: center;
+  height: 705px;
+}
+
+.gallery .controls {
+  position:absolute;
+  overflow: hidden;
+  top: 400px;
+  left: 560px;
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 14px;
+  background-color: #33CCFF;
+}
+
+.gallery .controls img {
+  border: 2px solid #000;
+}
+
+.gallery .control-button {
+  display: inline;
+  font-size: 3em;
+  text-decoration: none;
+  transition: color .1s;
+}
+
+.controls{
+	height: 100px;
+	width: 1652px;
+  overflow: hidden;
+}
+
+.controls li{
+	display:inline;
+	list-style: none;
+  overflow: hidden;
+}
+
+.controls ul {
+	height: 100px;
+}
+
+.first {
+	-webkit-animation: carousel 30s linear infinite;
+    -moz-animation: carousel 30s linear infinite;
+    animation: carousel 30s linear infinite;
+}
+/* Show Grid */
+.showgrid {
+	background: url("../img/grid-bg.png") repeat-y;
+}
